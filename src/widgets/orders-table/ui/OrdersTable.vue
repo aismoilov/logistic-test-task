@@ -29,6 +29,9 @@
             <th class="px-4 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
               Вес (кг)
             </th>
+            <th class="px-4 py-3 text-left text-xs font-medium text-black uppercase tracking-wider">
+              Действия
+            </th>
           </tr>
         </thead>
         <tbody class="bg-white divide-y divide-gray-200">
@@ -36,8 +39,7 @@
             v-for="order in orderStore.filteredOrders"
             :key="order.id"
             :class="{ 'bg-blue-50': isSelected(order.id) }"
-            class="hover:bg-gray-50 cursor-pointer transition"
-            @click="openEditModal(order)"
+            class="hover:bg-gray-50 transition"
           >
             <td class="px-4 py-3" @click.stop>
               <input
@@ -64,6 +66,17 @@
             </td>
             <td class="px-4 py-3 text-sm text-black">{{ formatDate(order.date) }}</td>
             <td class="px-4 py-3 text-sm text-black">{{ order.weight }}</td>
+            <td class="px-4 py-3">
+              <button
+                @click.stop="openEditModal(order)"
+                class="p-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded transition"
+                title="Редактировать"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>
