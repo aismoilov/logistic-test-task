@@ -1,0 +1,62 @@
+[
+  {
+    "id": 5021,
+    "sender_city": "Москва",
+    "receiver_city": "Казань",
+    "pickup": { "lat": 55.7512, "lng": 37.6184 },
+    "delivery": { "lat": 55.7887, "lng": 49.1221 },
+    "status": "Новый",
+    "date": "2025-11-15",
+    "weight": 15
+  },
+  {
+    "id": 5022,
+    "sender_city": "Санкт-Петербург",
+    "receiver_city": "Екатеринбург",
+    "pickup": { "lat": 59.9343, "lng": 30.3351 },
+    "delivery": { "lat": 56.8389, "lng": 60.6057 },
+    "status": "В пути",
+    "date": "2025-10-22",
+    "weight": 20
+  },
+  {
+    "id": 5023,
+    "sender_city": "Новосибирск",
+    "receiver_city": "Красноярск",
+    "pickup": { "lat": 55.0084, "lng": 82.9357 },
+    "delivery": { "lat": 56.0153, "lng": 92.8932 },
+    "status": "Доставлен",
+    "date": "2025-09-05",
+    "weight": 25
+  },
+  {
+    "id": 5024,
+    "sender_city": "Москва",
+    "receiver_city": "Владивосток",
+    "pickup": { "lat": 55.7512, "lng": 37.6184 },
+    "delivery": { "lat": 43.1198, "lng": 131.8869 },
+    "status": "Новый",
+    "date": "2025-11-28",
+    "weight": 30
+  },
+  {
+    "id": 5025,
+    "sender_city": "Челябинск",
+    "receiver_city": "Омск",
+    "pickup": { "lat": 55.1644, "lng": 61.4368 },
+    "delivery": { "lat": 54.9885, "lng": 73.3242 },
+    "status": "В пути",
+    "date": "2025-10-10",
+    "weight": 18
+  },
+  {
+    "id": 5026,
+    "sender_city": "Казань",
+    "receiver_city": "Москва",
+    "pickup": { "lat": 55.7887, "lng": 49.1221 },
+    "delivery": { "lat": 55.7512, "lng": 37.6184 },
+    "status": "Доставлен",
+    "date": "2025-09-18",
+    "weight": 22
+  }
+]
